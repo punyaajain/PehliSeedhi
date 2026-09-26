@@ -1,0 +1,448 @@
+{
+    "widgets": [
+        {
+            "x": 0,
+            "y": 0,
+            "type": "static-text",
+            "title": "PEHLI SEEDHI Header",
+            "width": 12,
+            "height": 4,
+            "content": "# PEHLI SEEDHI\n\n**Your experience. Your next step.**\n\nYou already have experience. This app helps you understand what you have, identify what is missing for your next role, and decide what to do next."
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "type": "static-text",
+            "title": "Journey Map",
+            "width": 12,
+            "height": 15,
+            "content": "🗺️ PEHLI SEEDHI: USER JOURNEY MAP\n\n┌──────────────────────────────────────────────────────────────────────────────┐\n│                     PHASE 1: DISCOVERY & SKILL MAPPING                      │\n├──────────────────────────────────────────────────────────────────────────────┤\n│ 01. MY EXPERIENCE  ──►  02. MY TRANSFERABLE SKILLS  ──►  03. MY SKILL MAP   │\n│ (Your Story)            (Evidence-Based Skills)            (Role Matching)   │\n└──────────────────────────────────────────────────────────────────────────────┘\n                                      │\n                                      ▼\n┌──────────────────────────────────────────────────────────────────────────────┐\n│                       PHASE 2: GAP ANALYSIS & STRATEGY                      │\n├──────────────────────────────────────────────────────────────────────────────┤\n│ 04. MY SKILL GAPS ──► 05. MY NEXT STEP ──► 06. MY PROOF ──► 07. MY 90-DAY  │\n│ (Essential Gaps)       (Action Direction)    (Show Evidence)      PLAN       │\n│                                                                  (Roadmap)    │\n│                                      │                                       │\n│                                      ▼                                       │\n│                              08. RECOVERY PLAN                               │\n│                              (When Things Change)                            │\n└──────────────────────────────────────────────────────────────────────────────┘\n                                      │\n                                      ▼\n┌──────────────────────────────────────────────────────────────────────────────┐\n│                    PHASE 3: EMPLOYMENT NAVIGATION & LAUNCH                 │\n├──────────────────────────────────────────────────────────────────────────────┤\n│ 09. MY READINESS ──► 10. VERIFY OPPORTUNITY ──► 11. DIRECT OUTREACH        │\n│ (Am I Ready?)          (Risk + Role Fit Check)      (Connect + Reach Out)   │\n│                                                                              │\n│ 12. PORTFOLIO ARTIFACT ──► 13. DAILY SPRINT ──► 14. EMPLOYMENT SNAPSHOT     │\n│ (Show My Work)              (Next 7 Days)          (Progress + Next Move)   │\n└──────────────────────────────────────────────────────────────────────────────┘\n\n                    EXPERIENCE → SKILLS → GAPS → PROOF\n                         → READINESS → OPPORTUNITY\n                    → OUTREACH → ACTION → EMPLOYMENT"
+        },
+        {
+            "x": 0,
+            "y": 19,
+            "type": "text-input",
+            "title": "MY EXPERIENCE",
+            "width": 12,
+            "height": 7,
+            "placeholder": "✍️ MY EXPERIENCE — Describe in your own words! 📌 Current Status (Studies/Major) | 🛠️ Hands-on Work (Projects/Labs) | 👥 Responsibilities Handled | 💡 Problems Solved | 🎯 Future Goals | ⏱️ Weekly Available Hours. (Fill whatever applies!)"
+        },
+        {
+            "x": 0,
+            "y": 26,
+            "type": "inferred-text",
+            "title": "MY TRANSFERABLE SKILLS",
+            "width": 6,
+            "height": 11,
+            "prompt": "The user has shared their professional background in [MY EXPERIENCE]. They are an early-career professional with existing experience, seeking progression to their next role. Identify 5 to 7 of their strongest transferable skills.\n\nIMPORTANT LANGUAGE RULE: All skill names must be in English only. Do not translate skill names into Hindi, Hinglish, or any other language. Use only skill names actually supported by the user's evidence in [MY EXPERIENCE]. Do not invent skills. Do not use generic skills unless the user's experience clearly supports them.\n\nFor each skill, use this exact format:\n\n**Skill**\nName of the skill (in English only)\n\n**Where I used it**\nReference the specific experience, project, role, or responsibility they mentioned. Quote or closely paraphrase their words.\n\n**Why it matters**\nExplain briefly why this experience demonstrates the skill and why it is valuable for career progression.\n\n**Where it can be useful**\nMention 2 to 3 realistic roles or career areas where this skill is relevant.\n\n**Confidence**\nHigh / Medium / Needs more evidence\n\n---\n\nRules:\n- Only identify skills clearly supported by what they wrote. Do not invent experience.\n- Be specific. Reference actual examples they provided.\n- Use clear, professional language. Not corporate jargon.\n- Focus on transferable skills relevant to career progression.\n- Do not recommend specific companies, salaries, or guarantee employment.\n- Do not use em dashes.",
+            "parameters": {
+                "model": "bedrock-anthropic.claude-4-6-sonnet-v1-0",
+                "temperature": 0
+            }
+        },
+        {
+            "x": 6,
+            "y": 26,
+            "type": "inferred-text",
+            "title": "MY SKILL MAP",
+            "width": 6,
+            "height": 11,
+            "prompt": "The user has shared their background in [MY EXPERIENCE]. Create a progression-focused skill map.\n\nFirst, map their experience to skills and career areas using this format:\n\n**Current Experience → Transferable Skill → Career Relevance**\n\nFor example:\nManaged customer support queue for SaaS product → Problem resolution and communication under pressure → Customer Success Manager, Support Team Lead, Account Management\n\nUse only what they actually mentioned. Show 4 to 6 mappings.\n\n---\n\nThen create two priority lists:\n\n### SKILLS I CAN BUILD ON\n\nList the 3 skills where they already have the strongest evidence. For each, briefly state what makes the evidence strong.\n\n### SKILLS I SHOULD STRENGTHEN\n\nList the 3 skills that would be most valuable for their desired next role but where their current evidence is weaker. For each, briefly state why it matters for progression and what kind of experience or work would strengthen it.\n\n---\n\nRules:\n- Base everything on what they wrote. Do not invent experience.\n- Prioritize. Show only the 3 most important skills in each category.\n- Keep it practical and focused on progression.\n- Use clear, direct language.\n- Do not use em dashes.",
+            "parameters": {
+                "model": "bedrock-anthropic.claude-4-6-sonnet-v1-0",
+                "temperature": 0
+            }
+        },
+        {
+            "x": 0,
+            "y": 37,
+            "type": "inferred-text",
+            "title": "MY NEXT STEP",
+            "width": 6,
+            "height": 11,
+            "prompt": "The user has shared their background in [MY EXPERIENCE]. Based on their current experience, transferable skills, and desired career direction, suggest 3 realistic next-role directions.\n\nFor each of the 3 directions, use this exact format:\n\n**NEXT ROLE**\nSpecific role title\n\n**Why it fits my current experience**\nExplain the connection between their actual experience and this role. Reference specific things they mentioned.\n\n**Skills I already have**\nList 3 to 4 skills they have demonstrated that are relevant to this role.\n\n**Skills I need to strengthen**\nList 2 to 3 skills they would need to develop or demonstrate more strongly.\n\n**What would make me ready**\nGive 2 to 3 specific, practical actions that would prepare them for this role.\n\n---\n\nAfter presenting all 3 options, add:\n\n### RECOMMENDED NEXT STEP\n\nSelect the strongest option based on their current experience and explain in 2 to 3 sentences why this is the most realistic and achievable next step for them right now.\n\n---\n\nRules:\n- Base all recommendations on what they actually shared in [MY EXPERIENCE]. Do not invent experience.\n- Keep recommendations realistic and achievable within 6 to 18 months.\n- Do not guarantee promotion, job, or salary.\n- Do not recommend completely unrelated careers unless their experience clearly supports it.\n- If information is missing, state: \"More information is needed to make this recommendation confidently.\"\n- Use clear, professional language.\n- Do not use em dashes.",
+            "parameters": {
+                "model": "bedrock-anthropic.claude-4-6-sonnet-v1-0",
+                "temperature": 0
+            }
+        },
+        {
+            "x": 6,
+            "y": 37,
+            "type": "inferred-text",
+            "title": "MY SKILL GAPS",
+            "width": 6,
+            "height": 11,
+            "prompt": "The user has shared their background in [MY EXPERIENCE]. Their recommended next step is shown in [MY NEXT STEP].\n\nCompare their current skills with the skills needed for their recommended next role. Identify only the 3 most important gaps.\n\nFor each gap, use this exact format:\n\n**Skill gap**\nName the specific skill or capability.\n\n**Why it matters for my next role**\nExplain clearly why this skill is important for the recommended next role. Be specific.\n\n**What I already know**\nAcknowledge any related experience or foundation they already have. Reference what they shared in [MY EXPERIENCE].\n\n**What I still need to demonstrate**\nDescribe specifically what evidence, experience, or capability they need to show.\n\n**Priority: High / Medium / Low**\nAssign priority based on how critical this gap is for their next role.\n\n---\n\nRules:\n- Focus only on the 3 most important gaps. Do not list more.\n- Connect every gap directly to their desired progression and recommended next role from [MY NEXT STEP].\n- Do not list generic skills without context.\n- Be specific about what they need to demonstrate.\n- Base everything on information they provided in [MY EXPERIENCE].\n- If information is missing, state: \"More information is needed to make this recommendation confidently.\"\n- Use clear, professional language.\n- Do not use em dashes.",
+            "parameters": {
+                "model": "bedrock-anthropic.claude-4-6-sonnet-v1-0",
+                "temperature": 0
+            }
+        },
+        {
+            "x": 0,
+            "y": 48,
+            "type": "inferred-text",
+            "title": "MY PROOF",
+            "width": 6,
+            "height": 10,
+            "prompt": "The user has shared their background in [MY EXPERIENCE]. Their skill gaps are identified in [MY SKILL GAPS]. Their recommended next step is in [MY NEXT STEP].\n\nCreate one realistic 7 to 14 day challenge that helps them demonstrate one of their most important skill gaps through practical work.\n\nUse this exact format:\n\n**THE CHALLENGE**\nDescribe clearly what the user needs to do. Make it specific and actionable.\n\n**WHY IT MATTERS**\nExplain how this challenge directly helps with their next career step. Connect it to their recommended next role from [MY NEXT STEP].\n\n**STEPS**\nProvide 3 to 5 practical steps they should follow to complete this challenge. Number each step.\n\n**FINAL OUTPUT**\nDescribe what tangible result or deliverable they should have at the end of this challenge.\n\n**SKILL DEMONSTRATED**\nName the specific skill this challenge proves or strengthens. Connect it to a gap from [MY SKILL GAPS].\n\n**HOW TO PRESENT IT**\nExplain in 2 to 3 sentences how they could mention this project in an interview, add it to a portfolio, or discuss it in an internal career conversation.\n\n---\n\nRules:\n- The challenge must build on their existing experience from [MY EXPERIENCE]. Do not suggest something completely unrelated.\n- Keep it practical and low-cost. No expensive tools, certifications, or resources required.\n- Make it completable in 7 to 14 days with a reasonable time commitment.\n- Do not invent work experience they do not have.\n- If information is missing, state: \"More information is needed to make this recommendation confidently.\"\n- Use clear, professional language.\n- Do not use em dashes.",
+            "parameters": {
+                "model": "bedrock-anthropic.claude-4-6-sonnet-v1-0",
+                "temperature": 0
+            }
+        },
+        {
+            "x": 6,
+            "y": 48,
+            "type": "inferred-text",
+            "title": "MY 90 DAY PLAN",
+            "width": 6,
+            "height": 10,
+            "prompt": "The user has shared their background in [MY EXPERIENCE]. Their recommended next step is in [MY NEXT STEP]. Their skill gaps are in [MY SKILL GAPS]. Their proof challenge is in [MY PROOF].\n\nThe user's available time per day is: [Time available per day] hours.\nThe user's job search urgency level is: [Job Search urgency] (scale: Learn → Proof → Reach → Check → Apply).\n\nCreate a realistic 90-day progression plan. Base the workload STRICTLY on [Time available per day]. Never suggest more work than this time allows.\n\nIf [Time available per day] is 0 to 1 hour: suggest one micro-task per week only.\nIf [Time available per day] is 2 to 3 hours: suggest one focused task per week.\nIf [Time available per day] is 4 or more hours: allow broader preparation, proof, outreach, and application work.\n\nPrioritize tasks based on [Job Search urgency]:\n- Learn or Proof stage: prioritize skill-building and proof challenges.\n- Reach or Check stage: balance proof with outreach and opportunity checking.\n- Apply stage: prioritize application-facing actions while maintaining critical readiness steps.\n\nNever remove necessary readiness or proof steps simply because urgency is high.\n\nUse this exact format:\n\n### DAYS 1 TO 30: Build the Foundation\n\n**Focus:** Strengthen the highest-priority skill gap from [MY SKILL GAPS].\n\n**Week 1:** One specific, achievable task calibrated to [Time available per day].\n\n**Week 2:** One specific, achievable task.\n\n**Week 3:** One specific, achievable task.\n\n**Week 4:** One specific, achievable task.\n\n---\n\n### DAYS 31 TO 60: Apply and Prove\n\n**Focus:** Complete the proof challenge from [MY PROOF].\n\n**Week 5:** One task.\n\n**Week 6:** One task.\n\n**Week 7:** One task.\n\n**Week 8:** One task.\n\n---\n\n### DAYS 61 TO 90: Build Evidence and Prepare\n\n**Focus:** Strengthen the application for the recommended next role.\n\n**Week 9:** One task.\n\n**Week 10:** One task.\n\n**Week 11:** One task.\n\n**Week 12:** One task.\n\n---\n\nRules:\n- Every action must connect to their actual experience and recommended next role.\n- Never exceed [Time available per day] hours of work per day.\n- Do not invent experience they do not have.\n- If information is missing, state: \"More information is needed to create a realistic plan.\"\n- Use clear, professional language.\n- Do not use em dashes.",
+            "parameters": {
+                "model": "bedrock-anthropic.claude-4-6-sonnet-v1-0",
+                "temperature": 0
+            }
+        },
+        {
+            "x": 0,
+            "y": 58,
+            "type": "static-text",
+            "title": "BACK TO TRACK",
+            "width": 12,
+            "height": 3,
+            "content": "## RECOVERY PLAN\n\nPlans change. Select your current situation below and we will update your plan to reflect it. The goal stays the same."
+        },
+        {
+            "x": 0,
+            "y": 61,
+            "type": "select",
+            "title": "MY CURRENT STATUS",
+            "width": 6,
+            "height": 2,
+            "options": [
+                "I am on track",
+                "I missed one week",
+                "I missed more than one week",
+                "My available time changed",
+                "My career goal changed"
+            ],
+            "defaultValue": "I am on track"
+        },
+        {
+            "x": 6,
+            "y": 61,
+            "type": "inferred-text",
+            "title": "UPDATED PLAN",
+            "width": 6,
+            "height": 11,
+            "prompt": "The user's original background is in [MY EXPERIENCE]. Their 90-day plan is in [MY 90 DAY PLAN]. Their recommended next step is in [MY NEXT STEP].\n\nTheir current status is: [MY CURRENT STATUS]\nWhat changed (if provided): [WHAT CHANGED]\n\nCurrent slider values to recalculate the plan:\n- Available time per day: [Time available per day] hours\n- Job search urgency: [Job Search urgency] (scale: Learn → Proof → Reach → Check → Apply)\n- Confidence to reach out: [Confidence to reach out where 10 is highest] out of 10\n- Readiness self-check: [Readiness Self Check] out of 10\n\nGenerate an updated recovery plan. Preserve completed progress. Recalculate only unfinished actions using the CURRENT slider values. Do NOT restart the entire journey.\n\nUse this exact format:\n\n**WHAT CHANGED**\nAcknowledge the specific situation selected. Be brief and direct.\n\n**WHAT I SHOULD FOCUS ON NOW**\nIdentify the 2 to 3 highest-priority actions from [MY 90 DAY PLAN] to focus on immediately. Calibrate complexity to [Time available per day]. Adjust priority based on [Job Search urgency].\n\n**WHAT CAN WAIT**\nIdentify 2 to 3 actions that can be deprioritized without significantly affecting progress.\n\n**UPDATED WEEKLY COMMITMENT**\nSuggest a realistic weekly action plan. Never exceed [Time available per day] hours of work per day. If [Confidence to reach out where 10 is highest] is low (1 to 4), reduce outreach difficulty. If [Readiness Self Check] is low (1 to 4), re-prioritize proof before applications.\n\n**THE PLAN CHANGED. THE GOAL DID NOT.**\nEnd with one short, practical sentence.\n\n---\n\nIf status is \"I am on track\": acknowledge progress and confirm the next action from [MY 90 DAY PLAN].\nIf status is \"My career goal changed\": ask them to update [MY EXPERIENCE] and explain the plan will regenerate.\nIf status is \"My available time changed\": recalculate workload strictly using [Time available per day].\nIf urgency has risen: move high-value employment actions earlier while preserving readiness steps.\nIf confidence has fallen: reduce outreach difficulty in the updated weekly plan.\n\n---\n\nRules:\n- Be supportive but practical.\n- Do not invent new experience or recommendations.\n- Use clear, professional language.\n- Do not use em dashes.",
+            "parameters": {
+                "model": "bedrock-anthropic.claude-4-6-sonnet-v1-0",
+                "temperature": 0
+            }
+        },
+        {
+            "x": 0,
+            "y": 63,
+            "type": "text-input",
+            "title": "WHAT CHANGED",
+            "width": 6,
+            "height": 9,
+            "isOptional": true,
+            "placeholder": "Optional: briefly describe what changed. For example: I now have 3 hours per week instead of 8, or my goal shifted from marketing to product management."
+        },
+        {
+            "x": 0,
+            "y": 72,
+            "type": "inferred-text",
+            "title": "MY EMPLOYER PROOF",
+            "width": 12,
+            "height": 11,
+            "prompt": "The user has shared their background in [MY EXPERIENCE]. Their recommended next step is in [MY NEXT STEP]. Their proof challenge is in [MY PROOF].\n\nUsing ONLY information the user actually provided in [MY EXPERIENCE] and [MY PROOF], generate career-facing materials.\n\nNever invent employers, job titles, qualifications, achievements, statistics, numbers, or responsibilities the user has not mentioned.\n\nUse this exact format:\n\n## MY EMPLOYER PROOF\n\n### 3 CV BULLETS\n\nWrite 3 CV bullet points based strictly on the user's actual experience. Each bullet should:\n- Start with a strong action verb\n- Reference a specific responsibility, project, or outcome they mentioned\n- Be concise and professional\n- Avoid invented numbers or unverified statistics\n\nIf there is not enough information for 3 strong bullets, write what is supported and state: \"More information is needed to complete this bullet accurately.\"\n\n---\n\n### STAR INTERVIEW ANSWER\n\nWrite one STAR-format interview answer (Situation, Task, Action, Result) using only experience the user has described in [MY EXPERIENCE].\n\n- Choose an experience relevant to their recommended next role from [MY NEXT STEP].\n- If the user has not provided enough detail for a specific result, note: \"Add a specific outcome or result here to strengthen this answer.\"\n- Keep it natural and professional, not scripted.\n\n---\n\n### PORTFOLIO DESCRIPTION\n\nWrite a short portfolio description (3 to 5 sentences) for a project, responsibility, or proof challenge the user has actually completed or is working on. Draw from [MY EXPERIENCE] or [MY PROOF].\n\n- Describe what was done, why it mattered, and what it demonstrated.\n- Do not invent details.\n- If the proof challenge is not yet complete, write it as a planned project they can add once finished.\n\n---\n\nRules:\n- Use only information the user provided. Do not invent anything.\n- If information is insufficient for any section, clearly state: \"More information is needed to create this accurately.\"\n- Keep language natural, professional, and specific.\n- Do not use em dashes.",
+            "parameters": {
+                "model": "bedrock-anthropic.claude-4-6-sonnet-v1-0",
+                "tools": [],
+                "temperature": 0
+            }
+        },
+        {
+            "x": 0,
+            "y": 83,
+            "type": "inferred-text",
+            "title": "MY NEXT ACTION",
+            "width": 12,
+            "height": 10,
+            "prompt": "The user has shared their background in [MY EXPERIENCE]. Their recommended next step is in [MY NEXT STEP]. Their most important skill gap is in [MY SKILL GAPS]. Their proof challenge is in [MY PROOF].\n\nThe user's available time per day is: [Time available per day] hours.\nThe user's job search urgency level is: [Job Search urgency] (scale: Learn → Proof → Reach → Check → Apply).\n\nGive the user exactly ONE action to complete within the next 7 days.\n\nCalibrate the action to [Time available per day]:\n- 0 to 1 hour available: suggest a micro-action completable in 15 to 30 minutes.\n- 2 to 3 hours available: suggest a focused task of 1 to 2 hours.\n- 4 or more hours available: suggest a more substantial task with a visible output.\n\nCalibrate priority to [Job Search urgency]:\n- Learn or Proof stage: prioritize skill-building or proof work.\n- Reach or Check stage: prioritize outreach preparation or opportunity verification.\n- Apply stage: prioritize a direct application-facing action.\n\nNever remove necessary readiness steps simply because urgency is high.\n\nUse this exact format:\n\n## YOUR NEXT ACTION\n\n**This week, do this:**\n\nState the one action clearly and specifically.\n\n**Why this action**\nExplain in 2 to 3 sentences why this is the most valuable action right now given their time and urgency.\n\n**What you should have at the end**\nDescribe the tangible output.\n\n**How long it should take**\nGive a realistic time estimate that does not exceed [Time available per day] hours per day.\n\n---\n\nRules:\n- Give exactly one action. Not a list.\n- Must be completable in 7 days within the stated time.\n- Connect directly to [MY NEXT STEP] or close a gap from [MY SKILL GAPS].\n- If information is missing, state: \"More information is needed to recommend a specific next action.\"\n- Use clear, professional language.\n- Do not use em dashes.",
+            "parameters": {
+                "model": "bedrock-anthropic.claude-4-6-sonnet-v1-0",
+                "temperature": 0
+            }
+        },
+        {
+            "x": 0,
+            "y": 93,
+            "type": "static-text",
+            "title": "EMPLOYMENT NAVIGATOR Header",
+            "width": 12,
+            "height": 5,
+            "content": "## 🧭 EMPLOYMENT NAVIGATOR\n\nThis section uses your resume, profile details, and everything PEHLI SEEDHI already knows about you to help you move from experience to action.\n\n**Fill MY PROFILE below. Then work through each section in order.**\n\n> WHAT I HAVE → WHAT ROLE FITS → AM I READY → WHAT SHOULD I PROVE → CAN I TRUST THIS OPPORTUNITY → WHO CAN I REACH → WHAT CAN I SHOW → WHAT DO I DO NEXT"
+        },
+        {
+            "x": 0,
+            "y": 98,
+            "type": "static-text",
+            "title": "MY PROFILE Header",
+            "width": 12,
+            "height": 4,
+            "content": "### 👤 MY PROFILE\n\nTell us about yourself beyond what PEHLI SEEDHI already captured. Upload your resume and fill in any details that will help personalize your career navigation.\n\n*Only fill what applies. You do not need to repeat information already in MY EXPERIENCE.*"
+        },
+        {
+            "x": 0,
+            "y": 102,
+            "type": "document",
+            "title": "Resume Upload",
+            "width": 12,
+            "height": 4,
+            "instruction": "Upload your current resume or CV. Accepted formats: PDF, Word, or plain text. This will be used alongside your PEHLI SEEDHI experience data to personalize your career navigation. If you do not have a resume yet, leave this empty and rely on MY EXPERIENCE."
+        },
+        {
+            "x": 0,
+            "y": 106,
+            "type": "text-input",
+            "title": "Target Role",
+            "width": 6,
+            "height": 4,
+            "placeholder": "What role are you working toward? For example: Data Analyst, Product Manager, UX Designer, Marketing Executive. Be as specific as you can."
+        },
+        {
+            "x": 6,
+            "y": 106,
+            "type": "text-input",
+            "title": "Location Preference",
+            "width": 6,
+            "height": 4,
+            "isOptional": true,
+            "placeholder": "City, region, or country you are targeting. For example: Mumbai, Remote India, London UK. Leave blank if not relevant."
+        },
+        {
+            "x": 0,
+            "y": 110,
+            "type": "select",
+            "title": "Current Status",
+            "width": 6,
+            "height": 2,
+            "options": [
+                "Student or recent graduate",
+                "Employed and looking to progress",
+                "Employed and looking to change field",
+                "Between jobs",
+                "Returning to work after a break",
+                "Freelancing or self-employed",
+                "Other"
+            ],
+            "defaultValue": "Student or recent graduate"
+        },
+        {
+            "x": 6,
+            "y": 110,
+            "type": "select",
+            "title": "Preferred Work Mode",
+            "width": 6,
+            "height": 2,
+            "options": [
+                "On-site",
+                "Hybrid",
+                "Remote",
+                "No preference",
+                "Open to any"
+            ],
+            "defaultValue": "No preference"
+        },
+        {
+            "x": 0,
+            "y": 112,
+            "type": "text-input",
+            "title": "Additional Experience",
+            "width": 12,
+            "height": 4,
+            "isOptional": true,
+            "placeholder": "Any experience, responsibilities, or projects not captured in your resume or MY EXPERIENCE. For example: volunteer work, informal mentoring, side projects, community roles, caregiving responsibilities that demonstrate skills."
+        },
+        {
+            "x": 0,
+            "y": 116,
+            "type": "text-input",
+            "title": "What Employers Should Know",
+            "width": 12,
+            "height": 4,
+            "isOptional": true,
+            "placeholder": "Anything else you want employers or recruiters to understand about you that does not appear in your resume. For example: relocation flexibility, availability date, languages spoken, accessibility requirements, career break context."
+        },
+        {
+            "x": 0,
+            "y": 120,
+            "type": "text-input",
+            "title": "OPPORTUNITY TEXT",
+            "width": 12,
+            "height": 7,
+            "placeholder": "✍️ Paste the full opportunity text here — job post, WhatsApp message, email, LinkedIn DM, or any recruitment offer. The more complete the text, the more accurate the screening."
+        },
+        {
+            "x": 0,
+            "y": 127,
+            "max": 24,
+            "min": 0,
+            "step": 1,
+            "type": "number-input",
+            "unit": "",
+            "title": "Time available per day",
+            "width": 12,
+            "height": 2,
+            "numberWidgetMode": "slider-numeric"
+        },
+        {
+            "x": 0,
+            "y": 129,
+            "max": 100,
+            "min": 0,
+            "step": 1,
+            "type": "number-input",
+            "unit": "",
+            "title": "Job Search urgency",
+            "width": 12,
+            "height": 2,
+            "markLabels": [
+                "learn",
+                "proof",
+                "reach",
+                "check",
+                "apply"
+            ],
+            "numberWidgetMode": "slider-ordinal"
+        },
+        {
+            "x": 0,
+            "y": 131,
+            "max": 10,
+            "min": 1,
+            "step": 1,
+            "type": "number-input",
+            "unit": "",
+            "title": "Confidence to reach out where 10 is highest",
+            "width": 12,
+            "height": 2,
+            "numberWidgetMode": "slider-numeric"
+        },
+        {
+            "x": 0,
+            "y": 133,
+            "max": 10,
+            "min": 1,
+            "step": 1,
+            "type": "number-input",
+            "unit": "",
+            "title": "Readiness Self Check",
+            "width": 12,
+            "height": 2,
+            "numberWidgetMode": "slider-numeric"
+        },
+        {
+            "x": 0,
+            "y": 135,
+            "type": "inferred-text",
+            "title": "VERIFY OPPORTUNITY",
+            "width": 6,
+            "height": 11,
+            "prompt": "You are the opportunity verification advisor inside PEHLI SEEDHI.\n\nThe user has provided: [OPPORTUNITY TEXT]\n\nProfile: Target Role: [Target Role] | Status: [Current Status] | Work Mode: [Preferred Work Mode] | Location: [Location Preference]\nAdditional experience: [Additional Experience]\nBackground: [MY EXPERIENCE]\nTransferable skills: [MY TRANSFERABLE SKILLS]\nSkill map: [MY SKILL MAP]\nReadiness: [MY READINESS]\n\nIf [OPPORTUNITY TEXT] is empty, respond only with: \"No opportunity text has been provided. Paste a job posting, recruiter message, or offer text into the OPPORTUNITY TEXT box to begin verification.\"\n\nOtherwise produce:\n\n## OPPORTUNITY CHECK\n\n### CREDIBILITY SIGNAL\nChoose exactly one: Low Concern / Some Concerns / High Concern / Insufficient Information\nExplain in 1 to 2 sentences based only on the opportunity text.\nIMPORTANT: Low Concern does NOT mean the opportunity is genuine. Never claim it is verified.\n\n---\n\n### RED FLAGS\nCheck ONLY the supplied opportunity text for:\n- upfront payment, registration, or training fees\n- requests for money\n- suspicious requests for sensitive personal information\n- vague or unverifiable company identity\n- unrealistic compensation or benefits\n- mass recruitment language\n- pressure, urgency, or artificial deadlines\n- guaranteed selection or employment\n- unclear or missing application process\n- suspicious contact details\n\nFor each red flag: quote the exact words, then explain the concern.\nIf none found: \"No obvious red flags in the supplied text. This does not confirm the opportunity is genuine. Verify independently before applying.\"\n\n---\n\n### ROLE MATCH\nCompare opportunity requirements against the user's profile.\nReturn one: Strong Match / Partial Match / Weak Match / Cannot Assess\n\nMATCHING EVIDENCE: List only actual skills and experience from [MY EXPERIENCE] and [MY TRANSFERABLE SKILLS] that match. Label each KNOWN or INFERRED.\n\nMOST IMPORTANT GAP: The single highest-impact requirement the user's evidence does not clearly support. One gap only.\n\n---\n\n### BEFORE YOU APPLY: 3 VERIFICATION STEPS\nExactly 3 specific, practical verification actions based on what is in the opportunity text.\n\n---\n\nRules:\n- Analyze ONLY the supplied opportunity text for red flags.\n- Never say a job is definitely genuine.\n- Never invent employers, recruiter names, vacancies, salaries, or URLs.\n- Absence of red flags is NOT evidence of legitimacy.\n- All skill names in English only.\n- Do not use em dashes.",
+            "parameters": {
+                "model": "bedrock-anthropic.claude-4-6-sonnet-v1-0",
+                "temperature": 0
+            }
+        },
+        {
+            "x": 6,
+            "y": 135,
+            "type": "inferred-text",
+            "title": "MY READINESS",
+            "width": 6,
+            "height": 11,
+            "prompt": "The user has shared their background in [MY EXPERIENCE]. Their transferable skills are in [MY TRANSFERABLE SKILLS]. Their skill gaps are in [MY SKILL GAPS]. Their next step is in [MY NEXT STEP]. Their proof challenge is in [MY PROOF].\n\nThe user's self-reported readiness score is: [Readiness Self Check] out of 10.\n\nIMPORTANT: This slider represents how ready the USER FEELS. It does NOT represent actual job readiness. Never convert it into a fake readiness percentage or treat it as verified evidence.\n\nGenerate a qualitative career readiness assessment. Then compare the self-reported score against the evidence-based assessment.\n\nUse this exact format:\n\n## MY READINESS\n\n### OVERALL READINESS STATUS\n\nBased on the evidence provided, select ONE:\n\n**READY TO TAKE THE NEXT STEP**\n(Strong relevant skills, clear alignment, realistic plan in place)\n\n**ALMOST READY**\n(Most skills present, 1 to 2 key areas need strengthening)\n\n**BUILD MORE EVIDENCE**\n(Foundational skills exist, proof challenges or visible experience needed)\n\n**NEEDS MORE DEVELOPMENT**\n(Significant skill gaps or limited alignment with desired next role)\n\nState the level that applies, then explain in 2 to 3 sentences why, based on their specific situation.\n\n---\n\n### SELF-CHECK vs. EVIDENCE\n\n**SELF-CHECK:** [Readiness Self Check] / 10\n\n**EVIDENCE-BASED STATUS:** [state the readiness level from above]\n\nIf they differ, explain the difference clearly using only [MY EXPERIENCE], [MY TRANSFERABLE SKILLS], [MY SKILL GAPS], [MY NEXT STEP], and [MY PROOF]. Never invent evidence. Never use the slider value as proof of readiness.\n\nIf they align, briefly confirm what the evidence supports.\n\n---\n\n### READINESS BREAKDOWN\n\n**STRONGEST AREA**\nIdentify the one area where they are most prepared. Reference [MY TRANSFERABLE SKILLS].\n\n**MOST IMPORTANT GAP**\nIdentify the one gap that would most significantly improve readiness. Reference [MY SKILL GAPS].\n\n**WHAT WOULD MOVE YOU FORWARD**\nList 2 to 3 specific, practical actions based on their current situation.\n\n---\n\n**Important:** This assessment indicates preparation for the selected career step. It does not predict employment or promotion.\n\n---\n\nRules:\n- Be honest. Do not inflate readiness.\n- Do not reference calculations, scores, or percentages beyond the self-check comparison.\n- Use only qualitative language for the evidence-based assessment.\n- If information is missing, state: \"More information is needed to assess readiness accurately.\"\n- Use clear, professional language.\n- Do not use em dashes.\n- Do not use generic motivational phrases.",
+            "parameters": {
+                "model": "bedrock-anthropic.claude-4-6-sonnet-v1-0",
+                "temperature": 0
+            }
+        },
+        {
+            "x": 0,
+            "y": 146,
+            "type": "inferred-text",
+            "title": "NAVIGATOR DIRECT OUTREACH",
+            "width": 6,
+            "height": 12,
+            "prompt": "You are the direct outreach advisor inside PEHLI SEEDHI Employment Navigator.\n\nUse only:\n- Target role: [Target Role]\n- Status: [Current Status]\n- Work mode: [Preferred Work Mode]\n- Additional experience: [Additional Experience]\n- Background: [MY EXPERIENCE]\n- Transferable skills: [MY TRANSFERABLE SKILLS] (all skill names in English only)\n- Skill map: [MY SKILL MAP]\n- Proof challenge: [MY PROOF]\n- Readiness: [MY READINESS]\n- Outreach confidence, self-reported only: [Confidence to reach out where 10 is highest] out of 10\n- Recommended next step: [MY NEXT STEP]\n\nNEVER invent specific people, recruiters, alumni, companies, or contacts.\nNEVER treat the confidence slider as evidence of networking ability.\n\n## DIRECT OUTREACH\n\n### STARTING POINT\nCheck [MY EXPERIENCE] and [Additional Experience] for any existing professional network.\nIf none found: state exactly \"No existing professional network is identified from the information provided.\"\nIf mentioned: describe in one line using only what was stated.\n\n### CONNECTION CHANNELS\nExactly 3 channel types ranked by friction:\n1. Lowest friction: type plus one sentence why it fits this user.\n2. Medium friction: type plus one sentence.\n3. Higher friction: type plus one sentence.\nUse only types: alumni communities, LinkedIn communities, professional associations, industry events, peer communities. No specific org names.\n\n### YOUR MESSAGES\nCalibrate to [Confidence to reach out where 10 is highest]:\n- 1 to 3: label all DRAFT ONLY, NOT FOR SENDING YET.\n- 4 to 6: messages ready, suggest sending one.\n- 7 to 10: messages for use now.\n\nLINKEDIN CONNECTION MESSAGE: Max 60 words. Real experience from [MY EXPERIENCE] or [MY PROOF] and [Target Role].\n\nCOLD EMAIL: Subject line plus max 80 words. No invented metrics or employers.\n\nINFORMATIONAL INTERVIEW REQUEST: Max 50 words. Learning-focused only.\n\nREFERRAL PITCH: Exactly 2 sentences. From [MY EXPERIENCE] and [MY PROOF] only.\n\n### CONFIDENCE NOTE\n- 1 to 4: one low-pressure action to build confidence before sending.\n- 5 to 7: confirm right moment to send.\n- 8 to 10: highest-value outreach action to take today.\n\nRules: Never invent people, companies, recruiters, or contacts. All skill names in English only. Do not use em dashes.",
+            "parameters": {
+                "model": "bedrock-anthropic.claude-4-6-sonnet-v1-0",
+                "temperature": 0
+            }
+        },
+        {
+            "x": 6,
+            "y": 146,
+            "type": "inferred-text",
+            "title": "PORTFOLIO ARTIFACT",
+            "width": 6,
+            "height": 12,
+            "prompt": "You are the portfolio artifact generator inside PEHLI SEEDHI Employment Navigator.\n\nUse only:\n- Background: [MY EXPERIENCE]\n- Additional experience: [Additional Experience]\n- Transferable skills: [MY TRANSFERABLE SKILLS] (all skill names in English only)\n- Skill map: [MY SKILL MAP]\n- Proof challenge: [MY PROOF]\n- Readiness: [MY READINESS]\n- Target role: [Target Role]\n- Recommended next step: [MY NEXT STEP]\n\nNever invent results, metrics, users, employers, outcomes, certifications, or achievements.\nIf a section has no evidence, write exactly: [Add your evidence here]\n\n## PORTFOLIO ARTIFACT\n\n### FORMAT SELECTION\nChoose the single most appropriate format based on [Target Role] and [MY NEXT STEP]:\n- GitHub README (technical or engineering roles)\n- Case Study (business, strategy, or consulting roles)\n- PRD (product management roles)\n- Project Showcase (creative, design, or generalist roles)\n\nState the format and explain in 1 sentence why it fits the target role.\n\n---\n\n**TITLE**\nProfessional project title based on [MY PROOF].\n\n**PROBLEM**\nThe problem this work addresses. From [MY PROOF] and [MY SKILL MAP]. Label KNOWN or INFERRED.\n\n**CONTEXT**\nThe setting. From [MY EXPERIENCE], [Additional Experience], or [MY PROOF] only.\n\n**OBJECTIVE**\nThe goal of the proof challenge. Reference [MY PROOF] directly.\n\n**MY APPROACH**\nThe thinking and method. Based on steps in [MY PROOF].\n\n**WHAT I DID**\nSpecific actions taken. From [MY PROOF] steps. First person. Concrete. No invented outcomes.\n\n**SKILLS DEMONSTRATED**\nSkills from [MY SKILL MAP] and [MY TRANSFERABLE SKILLS]. All names in English. Connect each to a specific action.\n\n**PROCESS**\nThe workflow. Based on [MY PROOF] structure.\n\n**OUTPUT**\nThe tangible deliverable from [MY PROOF]. If not yet complete, describe the planned output.\n\n**EVIDENCE / RESULTS**\nReal stated outcomes only. If none available: [Add your evidence here]\n\n**WHAT I LEARNED**\nConnect to [MY SKILL MAP] and [MY READINESS].\n\n**WHAT I WOULD IMPROVE**\nOne honest improvement area based on gaps in [MY READINESS].\n\n---\n\n## PORTFOLIO LINK\n[INSERT YOUR REAL PORTFOLIO LINK]\n\nUSE THIS LINK IN: Resume | LinkedIn | Direct outreach | Job applications\n\nThis tool does not publish or host anything. Add your own real link once your work is hosted.\n\n---\n\nRules:\n- Use only supplied information. Never invent anything.\n- All skill names in English only.\n- Do not generate any live URL.\n- Do not use em dashes.",
+            "parameters": {
+                "model": "bedrock-anthropic.claude-4-6-sonnet-v1-0",
+                "temperature": 0
+            }
+        },
+        {
+            "x": 0,
+            "y": 158,
+            "type": "static-text",
+            "title": "NAVIGATOR SPRINT ",
+            "width": 12,
+            "height": 3,
+            "content": "---\n### ⚡ DAILY SPRINT\n\nPersonalized 7-day action plan. Updates with every slider change. Every action connects to your actual evidence, target role, and constraints."
+        },
+        {
+            "x": 0,
+            "y": 161,
+            "type": "inferred-text",
+            "title": "NAVIGATOR DAILY SPRINT",
+            "width": 6,
+            "height": 15,
+            "prompt": "You are the daily sprint planner inside PEHLI SEEDHI Employment Navigator.\n\nUse only:\n- Target role: [Target Role] | Status: [Current Status]\n- Background: [MY EXPERIENCE]\n- Recommended next step: [MY NEXT STEP]\n- Skill gaps: [MY SKILL GAPS]\n- Proof challenge: [MY PROOF]\n- Readiness: [MY READINESS]\n- Next action: [MY NEXT ACTION]\n- 90-day plan: [MY 90 DAY PLAN]\n- What changed: [WHAT CHANGED]\n- Updated plan: [UPDATED PLAN]\n\nSlider inputs (constraints only, NOT evidence):\n- Time per day: [Time available per day] hours\n- Urgency: [Job Search urgency] (Learn to Proof to Reach to Check to Apply)\n- Outreach confidence: [Confidence to reach out where 10 is highest] out of 10\n- Self-readiness: [Readiness Self Check] out of 10\n\nCALIBRATION:\nTime: 0-1 hr = 15 min max per action. 2-3 hrs = 30-60 min. 4+ hrs = more substantial. Never exceed daily limit.\nUrgency: Learn or Proof = skill-building first. Reach or Check = balance proof and outreach. Apply = applications earlier, keep readiness steps.\nOutreach: 1-3 = research, prepare, draft only, no sending. 4-6 = one message appropriate. 7-10 = direct outreach appropriate.\nReadiness: If evidence-based status from [MY READINESS] is BUILD MORE EVIDENCE or NEEDS MORE DEVELOPMENT, proof actions always before applications regardless of urgency.\nChange: If [WHAT CHANGED] provided, preserve completed progress from [UPDATED PLAN], recalculate only unfinished actions, do not restart.\n\n## YOUR 7-DAY SPRINT\n\n**YOUR NEXT 15 MINUTES**\nSingle highest-impact action completable right now in 15 minutes or less. From [MY NEXT ACTION] or top priority in [MY SKILL GAPS] or [MY PROOF].\n\n**SPRINT SETTINGS**\nTime: [Time available per day] hrs | Urgency: [Job Search urgency] | Outreach: [Confidence to reach out where 10 is highest]/10 | Self-readiness: [Readiness Self Check]/10\n\n**DAY 1**\n15-MINUTE ACTION: Specific action tied to [Target Role].\nOUTPUT: Tangible result.\nWHY IT MATTERS: One sentence connecting to target role, proof, or key gap.\n\n**DAY 2**\n15-MINUTE ACTION:\nOUTPUT:\nWHY IT MATTERS:\n\n**DAY 3**\n15-MINUTE ACTION:\nOUTPUT:\nWHY IT MATTERS:\n\n**DAY 4**\n15-MINUTE ACTION:\nOUTPUT:\nWHY IT MATTERS:\n\n**DAY 5**\n15-MINUTE ACTION:\nOUTPUT:\nWHY IT MATTERS:\n\n**DAY 6**\n15-MINUTE ACTION:\nOUTPUT:\nWHY IT MATTERS:\n\n**DAY 7**\n15-MINUTE ACTION:\nOUTPUT:\nWHY IT MATTERS:\n\n**BY END OF WEEK**\nOne sentence: the single tangible output. Connect to [MY NEXT STEP] or [MY PROOF].\n\nRules: Every action from actual evidence only. Never invent anything. Never exceed time limit. Low confidence = no sending. Low evidence readiness = proof before applications. All skill names in English only. Do not use em dashes.",
+            "parameters": {
+                "model": "bedrock-anthropic.claude-4-6-sonnet-v1-0",
+                "temperature": 0
+            }
+        },
+        {
+            "x": 6,
+            "y": 161,
+            "type": "inferred-text",
+            "title": "EMPLOYMENT SNAPSHOT",
+            "width": 6,
+            "height": 15,
+            "prompt": "You are the employment snapshot generator inside PEHLI SEEDHI.\n\nGenerate a compact, scannable career status summary. Never invent anything.\n\nLabel ALL items:\n- KNOWN: directly stated by the user\n- INFERRED: reasonable conclusion from evidence\n- NOT YET ASSESSED: not enough information\n\nSources:\n- Profile: Target Role: [Target Role] | Status: [Current Status] | Work Mode: [Preferred Work Mode] | Location: [Location Preference]\n- Background: [MY EXPERIENCE]\n- Skills: [MY TRANSFERABLE SKILLS] (English only)\n- Gaps: [MY SKILL GAPS]\n- Next step: [MY NEXT STEP]\n- Proof: [MY PROOF]\n- Readiness: [MY READINESS]\n- Opportunity: [VERIFY OPPORTUNITY]\n- Outreach: [NAVIGATOR DIRECT OUTREACH]\n- Next action: [MY NEXT ACTION]\n- Self-readiness slider: [Readiness Self Check] out of 10\n\n## EMPLOYMENT SNAPSHOT\n\n**TARGET ROLE**\n[Target Role] if provided, else role from [MY NEXT STEP]. Label. One line.\n\n**CURRENT STATUS**\nFrom [Current Status] profile. Label. One line.\n\n**TOP 3 SKILLS**\nThree strongest from [MY TRANSFERABLE SKILLS]. English only. Confidence: High / Medium / Needs evidence for each.\n\n**READINESS**\nEvidence-based status from [MY READINESS]: one line.\nSelf-check: [Readiness Self Check]/10.\nIf they differ significantly, add: READINESS GAP: Self-assessment and demonstrated evidence differ. Focus on building proof.\n\n**BIGGEST GAP**\nHighest-priority gap from [MY SKILL GAPS]. One line.\n\n**PROOF STATUS**\nProof challenge from [MY PROOF]. One line. In Progress or Not Yet Started.\n\n**OPPORTUNITY**\nIf [VERIFY OPPORTUNITY] has output: credibility signal in one line.\nIf not: No opportunity checked yet.\n\n**BEST CONNECTION CHANNEL**\nLowest-friction channel from [NAVIGATOR DIRECT OUTREACH]. One line.\n\n**NEXT MOVE**\nSingle most important action from [MY NEXT ACTION]. Completable today. One line.\n\nRules: Never invent employers, contacts, salaries, metrics, certifications, or outcomes. If field has no data: state Insufficient information to assess this reliably. All skill names in English only. No long paragraphs. Do not use em dashes.",
+            "parameters": {
+                "model": "bedrock-anthropic.claude-4-6-sonnet-v1-0",
+                "temperature": 0
+            }
+        },
+        {
+            "x": 0,
+            "y": 176,
+            "type": "static-text",
+            "title": "THANK YOU FOR USING",
+            "width": 12,
+            "height": 6,
+            "content": "# PEHLI SEEDHI\n\n**Your experience. Your next step.**\n\nYou do not need to start over to move forward.\n\n*All guidance in this app is based only on the information you provided. It is intended to support your thinking, not to replace professional career advice. Validate important career decisions with a trusted advisor or mentor.*"
+        }
+    ]
+}
