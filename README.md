@@ -725,4 +725,6 @@ PEHLI SEEDHI does not:
 
 It provides structured evidence and practical next steps so the user can make better-informed decisions.
 
-# DEMO:https://partyrock.aws/u/punyajain/RSl2-ZO2yV/PEHLI-SEEDHI%253AFINALS-What-you've-done-already-counts.
+# Demo
+
+[Open PEHLI SEEDHI on AWS PartyRock](https://partyrock.aws/u/punyajain/RSl2-ZO2yV/PEHLI-SEEDHI%253AFINALS-What-you've-done-already-counts.)
