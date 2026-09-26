@@ -5,7 +5,6 @@
 > An AI-powered career navigation platform that helps early-career women turn existing experience into transferable skills, career direction, demonstrable proof, and practical employment action.
 
 ---
-
 ## Overview
 
 Many women do not lack effort, learning, or experience.
